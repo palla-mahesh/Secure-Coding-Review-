@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Results</title>
+
+    <style>
+
+        body{
+            font-family:Arial;
+            background:#f4f4f4;
+            padding:40px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            background:white;
+        }
+
+        th, td{
+            border:1px solid #ccc;
+            padding:12px;
+            text-align:left;
+        }
+
+        th{
+            background:#222;
+            color:white;
+        }
+
+        h1{
+            margin-bottom:20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1>Security Analysis Results</h1>
+
+<h3>File: {{ filename }}</h3>
+
+<table>
+
+    <tr>
+        <th>Issue</th>
+        <th>Severity</th>
+        <th>Recommendation</th>
+    </tr>
+
+    {% for result in results %}
+
+    <tr>
+        <td>{{ result.issue }}</td>
+        <td>{{ result.severity }}</td>
+        <td>{{ result.recommendation }}</td>
+    </tr>
+
+    {% endfor %}
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+Flask
+Flask-SQLAlchemy
+Flask-Login
+Flask-WTF
+Werkzeug
+bandit
+bcrypt
+email-validator
+reportlab
+matplotlib

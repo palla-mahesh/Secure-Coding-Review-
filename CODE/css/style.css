@@ -1,0 +1,25 @@
+body {
+    background: #f5f7fa;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.table {
+    background: white;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+}

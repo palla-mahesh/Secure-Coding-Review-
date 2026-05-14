@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload File</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background:#f4f4f4;
+            padding:50px;
+        }
+
+        .box{
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            width:400px;
+            margin:auto;
+        }
+
+        button{
+            padding:10px 20px;
+            background:green;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h2>Upload Source Code File</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <input type="file" name="file" required>
+
+        <br><br>
+
+        <button type="submit">
+            Upload File
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
